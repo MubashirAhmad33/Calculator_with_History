@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Inter:wght@600;800&family=Lilita+One&family=Mochiy+Pop+One&family=Nunito+Sans:wght@300&family=Outfit:wght@400;800&family=Poppins:wght@400;700&family=Raleway:wght@300;900&family=Roboto&family=Satisfy&family=Signika:wght@300;400&display=swap");
+
+
+*{
+  font-family: 'Roboto'sans-serif;
+  font-size: 18px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid black;
+  background-color: black;
+  border-radius: 5px;
+}
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: minmax(60px,auto);
+}
+input[type='text']{
+  height: 75px;
+  width: 249px;
+  background-color: black;
+  border: none;
+  color: #fff;
+  outline: none;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#clear{
+  grid-column: 1/3;
+  grid-row:1 ;
+  color: #262834;
+
+}
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #262834;
+}
+#backspace{
+  color: #262834;
+}
+button{
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: #262834;
+  color: #fff;
+  font-weight: 700;
+}
+.highlight{
+  background-color: #56cbdb;
+}
+.history{
+  color: #fff;
+  list-style: none;
+  text-align: center;
+margin-top: -15px;
+}
+.History{
+  height: auto; 
+  background-color: #56cbdb;
+  /* margin-left:600px;
+  margin-top: 175px; */
+  width: 280px;
+  border-radius: 10px;
+}
+.btnclaer{
+  font-size: 1rem;
+  background-color: lightcoral;
+ 
+}
+.cleardiv{
+  width: 100px;
+ margin-left: auto;
+ margin-right: auto;
+}
